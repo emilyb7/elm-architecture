@@ -1,0 +1,50 @@
+body {
+  background: #71d16c;
+  font-size: 2em;
+  font-family: monospace;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+  text-align: center;
+}
+
+input, input:focus {
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 75vw;
+  font-size: inherit;
+  font-family: inherit;
+  background: #a5eda1;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+button {
+  height: 50px;
+  width: 130px;
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #71d16c;
+  font-size: 1em;
+  font-family: inherit;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:disabled {
+  background: #a5eda1;
+}
+
+div {
+  width: 75vw;
+}
