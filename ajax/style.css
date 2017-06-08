@@ -1,0 +1,48 @@
+body {
+  background: #dbdace;
+  margin: 0;
+}
+
+#container {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.spinny {
+  border-top: 2px solid #56c113;
+  border-right: 2px solid #56c113;
+  border-bottom: 2px solid #56c113;
+  border-left: 2px solid transparent;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  position: absolute;
+  animation: rotate 1s infinite linear;
+  top: 0;
+  left: 50%;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.opaque {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

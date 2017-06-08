@@ -39,7 +39,7 @@ const view = (signal, model, root) => {
 const mount = (model, view, root_element_id) => {
   const root = document.getElementById(root_element_id);
   const signal = (action) => (event) => {
-    model = update(model, action())
+    model = update(model, action(event))
     view(signal, model, root)
   }
   view(signal, model, root)
@@ -70,7 +70,7 @@ const display = (model, signal, action) => {
   }
   const container = document.createElement('div')
   container.className = 'display'
-  
+
   const time = document.createElement('p')
   time.textContent = model.startTime > 0
     ? Math.floor((new Date().getTime() - model.startTime - model.offset) / 1000)
