@@ -49,7 +49,7 @@ const mount = (model, view, root_element_id) => {
 
   view(signal, model, root)
 
-  const endpoint = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC"
+  const endpoint = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC"
   signal(fetchImage)();
   fetch(endpoint)
     .then(res => res.json())
