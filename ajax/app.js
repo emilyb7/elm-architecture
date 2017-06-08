@@ -76,7 +76,7 @@ const imgContainer = (model, action, signal) => {
 
 const imgEl = (url, imageLoaded, action, signal) => {
   const img = document.createElement('img')
-  img.src = url
+  img.src = url.replace('http://', 'https://')
   img.classList.add("transparent")
   if (!imageLoaded) {
     img.onload = signal(action)
