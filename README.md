@@ -1,4 +1,4 @@
-A few examples using the Elm infrastructure based on [DWYL's tutorial](https://github.com/dwyl/learn-elm-architecture-in-javascript)
+A few examples of mini apps based on DWYL's [Elm architecture in JavaScript tutorial](https://github.com/dwyl/learn-elm-architecture-in-javascript)
 
 Example 1: [counting with cats](https://emilyb7.github.io/elm-architecture/v1/)
 
